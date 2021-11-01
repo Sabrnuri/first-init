@@ -4,21 +4,106 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
     <title>git changes</title>
 </head>
 <body>
-    <h1>
-        Hello world
-    </h1>
-    <header>
-        <section>
-            <main>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis odit nemo repellendus eos iure sapiente facere nulla earum maiores consectetur libero numquam similique eius voluptatibus, voluptatum consequuntur cumque, accusamus fugiat officiis minus. Deserunt fuga hic quia harum facilis nobis, voluptates accusamus assumenda in qui architecto totam labore, sint nisi porro amet quae eveniet error aspernatur obcaecati asperiores non, voluptatum ipsum. Aliquam accusamus ea in enim? Maiores illo eligendi, commodi saepe accusantium quis molestiae ducimus voluptate, necessitatibus vitae cum molestias neque et aliquam nihil vero nam culpa consequuntur. Vero maxime ipsum alias, est quasi dolorum, quisquam iusto et nihil, ad praesentium.
-                <div>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi magnam porro ut mollitia. Minima quisquam accusantium repellendus aliquid, autem voluptatibus earum magni voluptatem fugiat dolor possimus, commodi optio vel aperiam..
-                </div>
-            </main>
-        </section>
+
+    <!-- BEM-
+    B - Blok
+    E - Element
+    M - Modifikator
+    -->
+
+    <header class="header">
+        <div class="container header__container">
+            <a class="header__link" href="#">
+                <img class="header__logo" src="./images/header/cofffee.svg" alt="coffee" width="236" height="26">
+            </a>
+
+            <nav class="header__navigator">
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a class="header__inner-link header__inner-link--active" href="#">
+                            HOME
+                        </a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__inner-link" href="#">
+                            ABOUT US
+                        </a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__inner-link" href="#">
+                            CREATE YOUR PLAN
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
+    <main class="site__main">
+        <section class="hero">
+            <div class="container">
+                <div class="hero__wrapper">
+                    <h1 class="hero__heading">
+                        Great coffee made simple.
+                    </h1>
+    
+                    <p class="hero__text">
+                        Start your mornings with the world’s best coffees. Try our expertly curated artisan coffees from our best roasters delivered directly to your door, at your schedule.
+                    </p>
+    
+                    <a class="hero__link button" href="#">
+                        Create your plan
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <a class="header__link" href="#">
+                <img class="header__logo" src="./images/footer_img/coffee_logo.svg" alt="coffee" width="236" height="26">
+            </a>
+
+            <nav class="header__navigator">
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a class="footer__inner-link header__inner-link" href="#">
+                            HOME
+                        </a>
+                    </li>
+                    <li class="header__item">
+                        <a class="footer__inner-link header__inner-link" href="#">
+                            ABOUT US
+                        </a>
+                    </li>
+                    <li class="header__item">
+                        <a class="footer__inner-link header__inner-link" href="#">
+                            CREATE YOUR PLAN
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <ul class="footer__media-list">
+                <li class="footer__media-item">
+                    <img class="footer__media-images" src="./images/footer_img/twette.svg" alt="facebook"
+                    width="24" height="24">
+                </li>
+                <li class="footer__media-item">
+                    <img class="footer__media-images" src="./images/footer_img/instagram.svg" alt="twette"
+                    width="24" height="24">
+                </li><li class="footer__media-item">
+                    <img class="footer__media-images" src="./images/footer_img/focebook.svg" alt="instagram"
+                    width="24" height="24">
+                </li>
+            </ul>
+        </div>
+    </footer>
+
 </body>
 </html>
